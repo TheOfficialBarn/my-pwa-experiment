@@ -3,20 +3,20 @@ Significance of this file:
 	Contains info about the name, icons, and how it should be displayed
 	as an icon on the user's device
 	
-
+	PWA needs to know the name shown on the homescreen, icon, etc.
 
 */
 
 export default function manifest() {
 	return {
-	  name: 'Next.js PWA',
-	  short_name: 'NextPWA',
-	  description: 'A Progressive Web App built with Next.js',
+	  name: 'PWA Test', // App switcher / instalation
+	  short_name: 'PWA', // homescreen
+	  description: 'A Progressive Web App Test',
 	  start_url: '/',
-	  display: 'standalone',
+	  display: 'standalone', // Telling you don't load it in safari, load it as a standalone app!!!!!!!
 	  background_color: '#ffffff',
 	  theme_color: '#000000',
-	  icons: [
+	  icons: [ // App icons
 		{
 		  src: '/icon-192x192.png',
 		  sizes: '192x192',
