@@ -45,3 +45,29 @@ body {
   z-index: 1000;
   pointer-events: none; /* ensures it doesn’t interfere with touch events */
 }
+
+.img-container {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content-container {
+  width: 80%;
+  height: 400px;
+  margin: 20px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.progress {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  transform-origin: 0%;
+}

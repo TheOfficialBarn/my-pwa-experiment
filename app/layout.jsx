@@ -73,18 +73,12 @@ export default async function RootLayout({ children }) {
 
             {wallpaper && (
               <div 
-                className=""
+                className="fixed w-full h-full -z-10 blur-md scale-110 dark:brightness-50 transition-all duration-300"
                 style={{
-                  position: 'fixed',                                // Fix to viewport, not affected by scrolling
-                  width: '100%',                                    // We want the image area to be the max area available
-                  height: '100%',                                   // We want the image area to be the max area available
-                  backgroundImage: `url(${wallpaper.fullUrl})`,     // Grab the background image!
-                  backgroundSize: 'cover',                          // Center don't rlly work if we don't cover this image
-                  backgroundPosition: 'center',                     // So we get the center of the wallpaper
-                  filter: 'blur(8px)',                              // Reg Blur
-                  WebkitFilter: 'blur(8px)',                        // Apple Blur
-                  zIndex: -1,                                        // So the image is behind everything 
-                  transform: 'scale(1.1)'                           // Scale up by 10% to get rid of wacky edges
+                  backgroundImage: `url(${wallpaper.fullUrl})`,     
+                  backgroundSize: 'cover',                          
+                  backgroundPosition: 'center',                     
+                  transform: 'scale(1.1)'                           
                 }}
               />
             )}
